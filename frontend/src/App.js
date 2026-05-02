@@ -28,7 +28,7 @@ export default function App() {
     setLoading(true);
 
     try {
-      const res = await axios.post("https://connect-ai-backend.onrender.com/chat", {
+     const res = await axios.post("/api/chat", {
         message: input,
         sessionId: SESSION_ID,
       });
